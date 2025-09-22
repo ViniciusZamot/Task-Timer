@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="history.css">
+
+</head>
+<body>
+    <main>  
+        <header class="app-header">
+
+            <p class="app-header-timer">00:00:00</p>
+
+            <div class="app-header-buttons">
+
+                <button class="restart-button"><img src="atualizar.png" alt="Reiniciar"  width="15px" height= "15px"></button>
+                <button class="start-button" id="pause-start-button"><img src="toque.png" alt="começar cronômetro" width="30px" height= "30px"></button>
+
+            </div>
+
+            <div class="app-header-input">
+                <label><input type="text" id="app-header-task-name"></label>
+                <button id="app-header-submit-button"><img src="verificar.png" alt="Salvar" width="17px" height= "auto">
+                </button>
+            </div>
+        </header>
+
+        <section class="computer-history">
+            
+            <table>
+                <thead>
+                    <tr><th colspan="5">HISTÓRICO</th></tr>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Tempo</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script  src="stopwatch.js" defer></script>
+</body>
+</html>

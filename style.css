@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+}
+
+.app-header{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 100%;
+    max-width: 90vw;
+    align-items: center;
+}
+
+.app-header-timer{
+    font-size: 50px;
+    font-family: Arial;
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 5px;
+    padding: 0 25px;
+    margin-bottom: 1vh;
+}
+
+.app-header-buttons{
+    position: relative;
+}
+
+.restart-button{
+    background-color: rgb(255, 0, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    cursor: pointer;
+}
+
+.start-button{
+    background-color:rgb(0, 255, 0);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pause-button{
+    background-color: rgb(0, 255, 0);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.app-header-input{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    gap: 5px;
+}
+
+#app-header-task-name{
+    min-width: 50vw;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#app-header-submit-button{
+    background-color: rgb(0, 255, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+#app-header-submit-button:hover{scale: 1.12;}
